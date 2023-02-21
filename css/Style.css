@@ -1,30 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 :root{
     --color-negro: #000000;
     --color-texto-blanco: #fff;
     --color-texto-blanco-hover: #fff;
     --color-navbar-boxshadow: rgba(0,0,0,0.3);
     --color-fondo-filtros: #cecece;
-
 }
-
 ::-webkit-scrollbar{
     width: 10px;
 }
-
 ::-webkit-scrollbar-thumb{
     background-color: var(--color-navbar-boxshadow);
     border-radius: 20px;
 }
-
 *{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-
 nav{
     box-shadow: 0 1px 2px var(--color-navbar-boxshadow);
     width: 100%;
@@ -33,109 +26,74 @@ nav{
     justify-content: space-between;
     height: 70px;
 }
-
 nav div{
     color: var(--color-texto-blanco);
     display: inline-block;
 }
-
 nav .logo{
     margin-top: 6px;
     margin-left: 40px;
     width: 100%;
 }
-
-
 nav .navbar_list ul {
     list-style: none;
     display: flex;
     padding: 1.2em;
 }
-
 nav .logo img{
     width: 100px;
 }
-
 nav .navbar_list ul li{
     margin: 0 20px;
-
 }
-
 nav .navbar_list ul li:first-letter{
     text-transform: uppercase;
 }
-
 nav .navbar_list ul li:hover{
     cursor: pointer;
     color: var(--color-texto-blanco-hover);
 }
-
 .alinear{
     display: flex;
 }
-
 .filtros{
     position: relative;
     height: 100vh;
     width: 20%;
     background-color: var(--color-fondo-filtros);
 }
-
 .filtros ul{
     padding: 10px 0 0 10px;
 }
-
 .filtros .listas::first-letter,
 .filtros .listas ul::first-letter{
     text-transform: uppercase;
 }
-
-
 .filtros .listas li{
     list-style: none;
     cursor: pointer;
 }
-
 .filtros .listas li span{
     font-weight: 600;
-
 }
-
 .filtros .listas li span:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-
 .tableros{
     width: 80%;
-    padding: 5%
-}
-
+    padding: 5%}
 .tableros .tablero iframe{
     width: 100%;
     height: 800px;
 }
-
-.tableros .tablero:nth-child(2){
+.tableros .tablero:nth-child(2),
+.tableros .tablero:nth-child(3){
     display: none;
 }
-
-
-
 @media (max-widht: 900){
     .fiiltros{
         overflow: hidden;
         font-size: 0.8em;
     }
 }
-
-
-
-
-
-
-
-
-
-
-

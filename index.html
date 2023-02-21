@@ -1,101 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link rel="stylesheet" href="css/Style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="d02baa2550a27612b6c9991a898ed666.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="css/Style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="d02baa2550a27612b6c9991a898ed666.jpg" />
     <title>Lacoste</title>
-</head> 
-<body>
-    
+  </head>
+
+  <body>
+       
     <nav>
-        <div class="logo">
-            <img src="MicrosoftTeams-image.png" alt="">
-        </div>
-        <div class="navbar_list">
-            <ul>
-                <li>inicio</li>
-                <li>informes</li>
-            </ul>
-        </div>
+      <div class="logo"><img src="MicrosoftTeams-image.png" alt="" /></div>
+      <div class="navbar_list">
+        <ul>
+          <li>inicio</li>
+          <li>informes</li>
+        </ul>
+      </div>
     </nav>
-
     <main>
-        <div class="alinear">
-            <div class="filtros">
-                <div class="listas">
-                    <ul>
-                        <li> 
-                            <span> comercial</span>
-                            <ul>
-                                <li id="precio" onclick="changeTablerouno()">Reporte General</li>
-                            </ul>
-                        </li>
-    
-                    </ul>
-                </div>
-                <div class="listas">
-                    <ul>
-                        <li>
-                            <span> Desarrollo de Telas</span>
-                            <ul>
-                                <li>informe 1</li>
-                                <li>informe 2</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="listas">
-                    <ul>
-                        <li>
-                            <span> Laboratorio de color</span>
-                            <ul>
-                                <li>informe 1</li>
-                                <li>informe 2</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="listas">
-                    <ul>
-                        <li>
-                            <span> Labaoratorio Textil</span>
-                            <ul>
-                                <li>informe 1</li>
-                                <li>informe 2</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="listas">
-                    <ul>
-                        <li>
-                            <span> Desarrollo de producto</span>
-                            <ul>
-                                <li>informe 1</li>
-                                <li>informe 2</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-    
-            <div class="tableros">
-                <div class="tablero" id="tablerouno">
-                    <h4></h4>
-                    <iframe title="Lacoste"  src="https://app.powerbi.com/view?r=eyJrIjoiOTM3MzE0ZTgtMzBiMS00NTBkLTg2ZGItNzMxYzIyYWMwNjViIiwidCI6IjZhNGViNDYzLTgyYmQtNGEwYi1hZDExLWZmZWJkMmZiNzI4NSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-                <div  class="tablero"  id="tablerodos" >
-                    <h4>Indicador</h4>
-                    <iframe title="Cotizador Calcetines"  src="https://app.powerbi.com/view?r=eyJrIjoiZWMzOWVhNDItMWNkMC00ODBkLTg2YzktYTU2YWUzM2Y4NTQzIiwidCI6IjZhNGViNDYzLTgyYmQtNGEwYi1hZDExLWZmZWJkMmZiNzI4NSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-            </div>
+      <div class="alinear">
+        <div class="filtros">
+          <div class="listas">
+            <ul>
+              <li>
+                <span> comercial</span>
+                <ul>
+                  <li id="informegeneral" onclick=" changeTablerouno()">
+                    Reporte General
+                  </li>
+                  <li id="descuento" onclick="changeTablerodos()">
+                    Reporte Genera2
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="listas">
+            <ul>
+              <li>
+                <span> Desarrollo de Telas</span>
+                <ul>
+                  <li id="infodestelas1" onclick="changeinfodestelas1()">
+                    informe 1
+                  </li>
+                  <li>informe 2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="listas">
+            <ul>
+              <li>
+                <span> Laboratorio de color</span>
+                <ul>
+                  <li>informe 1</li>
+                  <li>informe 2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="listas">
+            <ul>
+              <li>
+                <span> Labaoratorio Textil</span>
+                <ul>
+                  <li>informe 1</li>
+                  <li>informe 2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="listas">
+            <ul>
+              <li>
+                <span> Desarrollo de producto</span>
+                <ul>
+                  <li>informe 1</li>
+                  <li>informe 2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="tableros">
+          <div class="tablero" id="tablerouno">
+            <h4></h4>
+            <iframe
+              title="Lacoste"
+              src="https://app.powerbi.com/view?r=eyJrIjoiOTM3MzE0ZTgtMzBiMS00NTBkLTg2ZGItNzMxYzIyYWMwNjViIiwidCI6IjZhNGViNDYzLTgyYmQtNGEwYi1hZDExLWZmZWJkMmZiNzI4NSIsImMiOjR9"
+              frameborder="0"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+          <div class="tablero" id="tablerodos">
+            <h4>Indicador</h4>
+            <iframe
+              title="Cotizador Calcetines"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZWMzOWVhNDItMWNkMC00ODBkLTg2YzktYTU2YWUzM2Y4NTQzIiwidCI6IjZhNGViNDYzLTgyYmQtNGEwYi1hZDExLWZmZWJkMmZiNzI4NSIsImMiOjR9"
+              frameborder="0"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+          <div class="tablero" id="tablerotres">
+            <h4>desarollo de telas</h4>
+            <iframe
+              title="Cotizador Calcetines"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZWMzOWVhNDItMWNkMC00ODBkLTg2YzktYTU2YWUzM2Y4NTQzIiwidCI6IjZhNGViNDYzLTgyYmQtNGEwYi1hZDExLWZmZWJkMmZiNzI4NSIsImMiOjR9"
+              frameborder="0"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </main>
-
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
